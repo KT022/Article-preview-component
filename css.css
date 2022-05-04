@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: hsl(210, 46%, 95%);
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    display: flex;
+}
+
+/* picture */
+.card-pic{
+    background: url(/images/drawers.jpg);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+/* info-card */
+.card-info{
+    height: 300px;
+    width: 500px;
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 0 8px 8px 0;
+}
+
+.card-info .heading{
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: hsl(217, 19%, 35%);
+}
+
+.card-info .para p{
+    font-weight: 200;
+    color: hsl(214, 17%, 51%);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* share and author */
+.card-info .profile-share{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-info .profile-share img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+i.ti-share{
+    background-color: hsl(212, 26%, 89%);
+    border-radius: 50%;   
+    padding: 10px;
+    margin-left: 166px;
+    cursor: pointer;
+}
+
+.detail-author h2{
+    font-size: 15px;
+    color: hsl(217, 19%, 35%);
+}
+
+.detail-author p{
+    font-size: 14px;
+    color: hsl(212, 23%, 69%);
+    margin-top: 3px;
+}
+
+.detail-author{
+    margin-left: 20px;
+}
+
+/* on off btn */
+.detail-share {
+    width: 233px;
+    height: 60px;
+    background: hsl(217, 19%, 35%);
+    position: absolute;
+    display: flex;
+    left: 263px;
+    bottom: 68px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.detail-share p{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(206, 203, 203);
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;  
+    border-top: 20px solid hsl(217, 19%, 35%);
+    position: absolute;
+    right: -1px;
+    bottom: 54px;
+  }
+
+  .on-off-btn{
+      display: none;
+  }
+
+  .open{
+      display: block;
+  }
