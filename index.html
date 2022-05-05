@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="/themify-icons/themify-icons.css"> </head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="responsive.css">
 <body>
   <div class="main">
     <div class="card">
@@ -57,6 +58,7 @@
                 <i class="ti-facebook" style="color: #fff;font-size: 18px;margin-right: 10px;"></i>
                 <i class="ti-twitter-alt" style="color: #fff;font-size: 18px;margin-right: 10px;"></i>
                 <i class="ti-pinterest-alt" style="color: #fff;font-size: 18px;"></i>
+                <i class="ti-share js-onoff"></i>
               </div>
             </div>
           </div>
@@ -83,11 +85,32 @@
   </div>
 
   <script>
+    // share_detail = .share-items
+    //information = profile-share
     const share_btn = document.querySelector('.js-onoff')
     const share_detail = document.querySelector('.on-off-btn')
 
+    const shareTabOpen = document.querySelector('.profile-share')
+    const shareTabClose = document.querySelector('.detail-share')
+
+    shareTabOpen.addEventListener('click',function(){
+      if(window.innerWidth < 740){
+        shareTabOpen.style.display = 'none';
+        shareTabClose.style.display = 'block';
+      }
+    })
+
+    shareTabClose.addEventListener('click',function(){
+      if(window.innerWidth < 740){
+        shareTabClose.style.display = 'none';
+        shareTabOpen.style.display = 'block';
+      }
+    })
+
     function showSharebtn(){
-      share_detail.classList.toggle('open');
+      if(window.innerWidth >= 740){
+        share_detail.classList.toggle('open');
+      }
     }
 
     share_btn.addEventListener('click',showSharebtn)

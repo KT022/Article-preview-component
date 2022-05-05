@@ -1,0 +1,53 @@
+@media (max-width: 739px) {
+    .card {
+        flex-direction: column;
+    }
+
+
+    .card-pic {
+        width: 85vw;
+        border-radius: 10px 10px 0 0;
+        height: 24vh;
+    }
+
+    /* CARD-INFO */
+    .card-info {
+        width: 85vw;
+        border-radius: 0 0 10px 10px;
+        padding: 32px 22px;
+        height: 38vh;
+    }
+
+    .card-info .heading{
+        width: 72vw;
+    }
+
+    .card-info .heading{
+        font-size: 9px;
+    }
+
+    i.ti-share{
+        margin-left: 12vw;
+        padding: 12px;
+    }
+
+    .detail-share {
+        width: 85vw;
+        height: 8vh;
+        background: hsl(217, 19%, 35%);
+        position: absolute;
+        display: flex;
+        left: -21px;
+        bottom: -17px;
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+    }
+
+    i.ti-share:hover{
+        background-color: rgb(3, 113, 132);
+    }
+
+    .arrow-down{
+        display: none;
+    }
+}
